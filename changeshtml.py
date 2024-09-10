@@ -76,7 +76,7 @@ def main():
 
     data = load_json_data('resources.json')
 
-    if st.button("Create vector embeddins") and not st.session_state.embedding_done:
+    if st.button("Create vector embeddings") and not st.session_state.embedding_done:
         with st.spinner("Loading resources and creating embeddings..."):
             vector_embedding(data)
             st.success("Vector Store DB is ready")
